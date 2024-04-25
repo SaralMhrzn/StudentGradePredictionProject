@@ -65,6 +65,8 @@ target_predictions = features_test_norm.dot(theta)
 
 app = Flask(__name__, template_folder = 'templates')
 
+# this is edited
+
 @app.route('/', methods = ['GET', 'POST'])
 def home():
     result = ''
@@ -91,3 +93,4 @@ def home():
 
 if __name__ == '__main__':
     app.run()
+
