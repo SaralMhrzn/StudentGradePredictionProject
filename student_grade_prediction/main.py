@@ -28,7 +28,7 @@ def cost(features, target, theta):
     predictions = features.dot(theta)
     cost = 1 / 2 * num_of_samples * np.sum((predictions - target) ** 2)
     return cost
-
+# this is for practice
 def gradient_descent(features, target, theta, alpha, num_of_iterations):
     num_of_samples = len(target)
     cost_history = np.zeros(num_of_iterations)
